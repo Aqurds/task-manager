@@ -118,6 +118,44 @@ Clone this repository to your desired folder:
   npm start
 ```
 
+### Set-up linters in your local env
+
+### ESLint
+1. Run
+```npm install --save-dev eslint@7.x eslint-config-airbnb@18.x eslint-plugin-import@2.x eslint-plugin-jsx-a11y@6.x eslint-plugin-react@7.x eslint-plugin-react-hooks@4.x @babel/eslint-parser@7.x @babel/core@7.x  @babel/plugin-syntax-jsx@7.x  @babel/preset-react@7.x @babel/preset-react@7.x```
+
+2. Copy .eslintrc.json and .babelrc to the root directory of your project.
+
+3. If you are a contributor on this project don't change anything in these files as it may conflicts in group collaboration
+
+**If you think that change is necessary - open a Pull Request in this repository and let the repo owner know about it.
+
+4. Run 
+```npx eslint "**/*.{js,jsx}"``` 
+on the root of your directory of your project.
+
+5. Fix linter errors. Run 
+```npx eslint "**/*.{js,jsx}" --fix```
+Manual intervention may be required in some cases. Follow the hints.
+
+
+### Stylelint
+1. Run
+```npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x```
+
+2. Copy .stylelintrc.json to the root directory of your project.
+
+3. If you are a contributor on this project don't change anything in these files as it may conflicts in group collaboration
+
+**If you think that change is necessary - open a Pull Request in this repository and let the repo owner know about it.
+
+4. Run ```npx stylelint "**/*.{css,scss}"``` 
+on the root of your directory of your project.
+
+5. Fix linter errors. Run ```npx eslint "**/*.{js,jsx}" --fix```
+Manual intervention may be required in some cases. Follow the hints.
+
+
 
 <!-- AUTHORS -->
 
