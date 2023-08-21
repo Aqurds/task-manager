@@ -1,12 +1,11 @@
 <a name="readme-top"></a>
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="./src/assets/logo.png" alt="logo" width="140"  height="auto" />
+  <!-- <img src="./src/assets/logo.png" alt="logo" width="140"  height="auto" /> -->
   <br/>
 
-  <h3><b>BookStore</b></h3>
-  # task-manager
-📋 My Task Manager: A Trello-inspired React app for seamless task organization. Drag-and-drop tasks, create boards, and stay productive! 🚀 #React #TaskManager
+  <h3><b>WorkZen</b></h3>
+
 
 </div>
 
@@ -33,10 +32,10 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 BookStore <a name="about-project"></a>
+# 📖 WorkZen <a name="about-project"></a>
 
 
-**BookStore** The app for organizing personal book list. Add, remove & track reading progress, bookmark are some key features in this application.
+📋 A Trello-inspired React app for seamless task organization. Drag-and-drop tasks, create boards, and stay productive! 🚀 #React #TaskManager
 
 ## 🛠 Built With <a name="built-with"></a>
 

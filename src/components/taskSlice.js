@@ -37,11 +37,26 @@ export const taskSlice = createSlice({
     setColumnOrder: (state, action) => {
       state.columnOrder = action.payload.columnOrder
     },
-    
+    dragColumns: (state, action) => {
+      state.columnOrder = action.payload;
+    },
+    dragTasksDifferentColumn: (state, action) => {
+      let { srcColId, srcTaskIds, dstColId, dstTaskIds } = action.payload;
+
+      state.columns[srcColId].taskIds = srcTaskIds
+      state.columns[dstColId].taskIds = dstTaskIds
+    },
+    dragTasksSameColumn: (state, action) => {
+      const colId = action.payload.id
+      const taskIds = action.payload.taskIds
+
+      state.columns[colId].taskIds = taskIds
+    },
+
     // Add new reducers here
   },
 });
 
-export const { setAllTasks, setAllColumns, setColumnOrder, setCurrTaskIdToEdit, setCurrColIdToEdit, setDialogStatus } = taskSlice.actions;
+export const { setAllTasks, setAllColumns, setColumnOrder, dragColumns, dragTasksSameColumn, dragTasksDifferentColumn, setCurrTaskIdToEdit, setCurrColIdToEdit, setDialogStatus } = taskSlice.actions;
 
 export default taskSlice.reducer;
